@@ -1,0 +1,21 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.20"
+optimizer = true
+optimizer_runs = 200
+evm_version = "cancun"
+fs_permissions = []
+
+# Etherlink deploy needs higher gas limit than default estimate; use --gas-limit 20000000 when broadcasting
+
+[rpc_endpoints]
+# Etherlink — https://docs.etherlink.com/get-started/network-information/
+# Override with ETHERLINK_SHADOWNET_RPC / ETHERLINK_MAINNET_RPC env if needed
+shadownet = "https://node.shadownet.etherlink.com"
+mainnet = "https://node.mainnet.etherlink.com"
+
+[etherscan]
+shadownet = { key = "${ETHERLINK_EXPLORER_API_KEY}", url = "https://shadownet.explorer.etherlink.com/api" }
+mainnet = { key = "${ETHERLINK_EXPLORER_API_KEY}", url = "https://explorer.etherlink.com/api" }

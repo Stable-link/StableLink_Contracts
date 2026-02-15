@@ -1,0 +1,34 @@
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Foundry
+cache/
+out/
+broadcast/
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage and reports
+coverage/
+coverage_lcov/
+lcov.info
+*.lcov
+
+# Logs and temp
+*.log
+tmp/
+temp/
+
+# Node (if any JS tooling)
+node_modules/
