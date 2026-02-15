@@ -1,7 +1,13 @@
-# Environment and secrets
+# Environment and secrets - NEVER commit .env or any file with real secrets
 .env
 .env.local
 .env.*.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
 
 # Foundry
 cache/
